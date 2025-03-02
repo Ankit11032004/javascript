@@ -41,5 +41,19 @@ let userTwo=userOne
 userTwo.email="hitesh@google.com"
 console.log(userOne.email);
 console.log(userTwo.email);
+//stack
+let a=10;
+let b=a;
+b=20;
+console.log(a);
+console.log(b);
+let obj1={value:10};
+let obj2=obj1;
+obj2.value=20;
+console.log(obj1.value);
+console.log(obj2.value);
+
+
+
 
 
