@@ -26,3 +26,20 @@ console.log(typeof bigNumber);//bigint
 console.log(typeof outsideTemp);//object
 console.log(typeof myFunction);//function
 
+
+//+++++++++++++++++++++
+//stack(primitive),heap(non-primitive)
+let myYoutubename="ankityadav"
+let anothername=myYoutubename
+anothername="aman yadav"
+console.log(anothername);
+let userOne = {
+    email: "user@google.com",
+    upi: "user@upi"
+}
+let userTwo=userOne
+userTwo.email="hitesh@google.com"
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
