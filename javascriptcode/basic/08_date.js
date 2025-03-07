@@ -1,0 +1,1 @@
+//node javascriptcode/basic/07_nums_and_maths.js
