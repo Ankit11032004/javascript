@@ -35,6 +35,25 @@ console.log(newDate.toLocaleString('default', {
     month: "short",  
     day: "2-digit"    
 }));
+let date = new Date();
+console.log(date.toLocaleDateString('en-GB')); 
+console.log(date.toLocaleDateString('fr-FR')); 
+console.log(date.toLocaleDateString('ja-JP'));
+let eventDate = new Date("2025-12-31");
+let today = new Date();
+let timeDiff = eventDate.getTime() - today.getTime();
+let daysLeft = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
+console.log(`Days left until New Year 2026: ${daysLeft} days`);
+let timestamp = 1712121600000; // Example timestamp (milliseconds)
+let readableDate = new Date(timestamp);
+console.log(readableDate.toLocaleString('en-IN',{timeZone:"Asia/kolkata"}));
+today.setHours(0, 0, 0, 0);  // Start of the day
+console.log("Start of today:", today.toLocaleString());
+let endOfDay = new Date();
+endOfDay.setHours(23, 59, 59, 999); // End of the day
+console.log("End of today:", endOfDay.toLocaleString());
+
+ 
 
 
 
