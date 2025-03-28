@@ -74,7 +74,7 @@ class Dog extends Animal{
 const dog=new Dog('Buddy');
 dog.speak(); 
 
-//node javascriptcode/02_basic/array.js
+
 
 
 
