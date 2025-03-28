@@ -11,5 +11,15 @@ const real_another_array = anotherarray.flat(Infinity)
 console.log(real_another_array);
 console.log(Array.isArray("Ankit"));
 console.log(Array.from("ankit"));
+console.log(Array.from({name:"ankit"}));//interesting
+let score1=100
+let score2=200
+let score3=300
+let score4=400
+console.log(Array.of(score1,score2,score3,score4));
+
+
+
+
 
 
