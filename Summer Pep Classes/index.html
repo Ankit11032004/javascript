@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Centered Card</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+  function Showthanks() {
+    const msg = document.getElementById("thanks");
+    msg.innerHTML = "Thanks for clicking me!";
+    msg.style.opacity = "1";
+
+    setTimeout(() => {
+      msg.style.opacity = "0";
+      setTimeout(() => {
+        msg.innerHTML = "";
+      }, 500);
+    }, 3000);
+  }
+
+  function addnumber() {
+    var a = prompt("Enter the first number:");
+    var b = prompt("Enter the second number:");
+    a = parseFloat(a);
+    b = parseFloat(b);
+    var sum = a + b;
+    alert("The sum is " + sum);
+  }
+
+  function occurance() {
+    let arr = [20, 30, 30, 40, 50];
+    let freq = {};
+    for (let i = 0; i < arr.length; i++) {
+      let elem = arr[i];
+      if (freq[elem]) {
+        freq[elem]++;
+      } else {
+        freq[elem] = 1;
+      }
+    }
+
+    let result = "";
+    for (let key in freq) {
+      result += "Element " + key + " occurs " + freq[key] + " time(s)\n";
+    }
+    alert(result);
+  }
+
+  var array1=[20, 30, 30, 40, 50];
+  const map1=array1.map(x => x * 2);
+  console.log(map1);
+  var array2=[2,3,4,5,6];
+  var students=[
+    {"name":"Muskaaan",age:24},
+    {"name":"Himanshu",age:21},
+    {"name":"Jotin",age:19},
+    {"name":"Prity",age:10}
+  ]
+  var above20=students.filter(function(students){
+    return students.age>20;
+  });
+  console.log(above20);
+  
+  const newArray=array2.map((x,index)=>{
+    return x*index;
+  });
+
+
+  const nums=[10,20,30,30,40,30];
+  const numMap=new Map();
+
+//filter,map,object,json,array of object,webscoket,dom,difference in mapand map()
+</script>
+
+</head>
+<body>
+   
+    
+  <div class="center-wrapper">
+    <div class="card">
+         <div class="click-area" onclick="Showthanks()">Click me</div>
+    <p id="thanks"></p>
+      <img src="https://img.freepik.com/premium-vector/avatar-profile-icon-flat-style-male-user-profile-vector-illustration-isolated-background-man-profile-sign-business-concept_157943-38764.jpg?semt=ais_hybrid&w=740" alt="Image">
+      <p>This is a description of the image or content.</p>
+      <button>Click Me</button>
+      <button onclick="addnumber()">Add Number</button>
+      <button onclick="occurance()">occurance</button>
+    </div>
+  </div>
+</body>
+</html>
